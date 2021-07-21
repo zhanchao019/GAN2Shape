@@ -21,9 +21,18 @@ Our method **does not rely on mannual annotations or external 3D models**, yet i
 * python>=3.6
 * [pytorch](https://pytorch.org/)=1.1 or 1.2
 * [neural_renderer](https://github.com/daniilidis-group/neural_renderer)
+  
     ```sh
-    pip install neural_renderer_pytorch  # or follow the guidance at https://github.com/elliottwu/unsup3d
+    pip install neural_renderer_pytorch 
     ```
+  if install fail because GCC version below 5.XX  run below
+  '''sh
+  conda install gxx_linux-64=7.3
+  git clone https://github.com/daniilidis-group/neural_renderer.git
+  cd neural_renderer
+  python setup.py install
+  '''
+
 * [mmcv](https://github.com/open-mmlab/mmcv)
     ```sh
     pip install mmcv
